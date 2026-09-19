@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Jua', 'Noto Sans KR', sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at top, #1e1b4b 0%, #0f111a 45%, #080a10 100%);
+  }
+}
+
+.font-sans-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.game-card {
+  background: rgba(22, 28, 48, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(71, 85, 105, 0.45);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.game-card:hover {
+  border-color: rgba(56, 189, 248, 0.7);
+  box-shadow: 0 14px 30px rgba(56, 189, 248, 0.2);
+}
+
+.btn-push {
+  transition: all 0.12s ease-in-out;
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+.btn-push:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.35);
+}
